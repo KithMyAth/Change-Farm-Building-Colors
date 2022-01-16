@@ -1,0 +1,27 @@
+{
+   "Name": "Change Farm Building Colors",
+   "Author": "KithMyAth",
+   "Version": "1.0.0",
+   "Description": 
+   
+         "All Artwork Done by : Asunai. This mod allows the user to change the farms buildings colors from a new button at the bottom of the in game option menu called mod option>Change Farm Building Colors thanks to GMCM! All code and artwork retouch done by : KithMyAth",
+   
+   "UniqueID": "KithMyAth.ChangeFarmBuildingsColors",
+   "MinimumApiVersion": "3.8.0",
+   "ContentPackFor": {
+	  "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}
+
+/*
+Any issues concerning anything with this mod contact KithMyAth on nexus or Fluffy Kushions#1855 on discord thank you.
+
+                                                      ~ peace love and light ~ 
+
+Note: Content.json contains examples and more
+you can change the images directly in the folder of this mod using the same name as the file to make adjustments or switch it out entirely with your own design.
+for example want to change the house a little or even a lot? load the Blue, lavender, gold or even brown house into a photo editor and edit it freely keep in mind changing anything passed the outline of the buildings or changing the shadows below the house can get funky but play with it have fun once done put it right back into the house folder in the mod under the name of whichever building you want to replace! dont like blue ? change it up in a editor and throw a better house in its place with the name of Blue.png and viola your own edited house no more blue house :)
+
+                                                      UPDATE COMING SOON ~ EVERY COLOR OF THE RAINBOW AND SEASON CHANGES aswell as cabins :)
+
+*/

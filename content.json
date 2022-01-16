@@ -1,0 +1,1325 @@
+{
+//The code is seperated with titles and category names etc and spaced to the best of my ability any reference needed use the search to grow familiarity if need be 
+/*
+This file is broken into 3 parts
+each part or other info being seperated using the // for comments to not effect code
+Part 1 Dynamic Token
+Part 2 Config Token
+Part 3 Changes
+A example for each section will be placed within /* for comments with special characters to not effect code
+each example has < > if the example has these delete these arrows and type in its place what the short description describes. The rest can be changed if familiar and or comfortable to try to add more possibilities to your own creation!	
+*/
+		"Format": "1.15.0", //Format must be 1.15.0 or later
+//PART 1 Dynamic Tokens XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+		"DynamicTokens": [
+/* 
+																	Dynamic Tokens Example : :) 
+		
+		{
+			"Name": "<a name for the dynamic token>",				Note : dynamic token "name" and the dynamic tokens "value" aswell as the "<config tokens name>" all have to be different if any are the same as the next a error will occur.
+			"Value": "<dynamicTokenValueName>",
+			"When": 
+		{
+			"<ConfigTokenName>": "<config option names,config option names>"
+		}
+		}, 
+
+		Note: Dont forget about the Masks a image we place over our initial change for certain buildings that can be painted in game! (deluxe barn,deluxe coop, stable, max house upgrade.)
+
+	    example of mask
+
+		{
+			"Name": "<A name for the dynamic token for the mask>",
+			"value": "{{<Dynamic Token Name the mask is for>}}",                  
+
+		}
+
+*/
+
+																	//All Token Section
+
+		{
+        	"Name": "ActiveMod",
+        	"Value": "false"
+    	},
+    	{
+        	"Name": "ActiveMod",
+        	"Value": "true",
+        	"When":
+        {
+			"Mod": "On"
+        }
+    	},
+		{
+        	"Name": "ColorAllToken",
+        	"Value": "false"
+        },
+        {
+        	"Name": "ColorAllToken",
+    		"Value": "true",
+        	"When":
+       	{
+			"ColorAll": "Blue, Gold, Lavender"
+		}
+    	},
+																	//Barn Token Section
+		{
+			"Name": "Barn1",
+			"Value": "BlueBarn",
+			"When": 
+		{
+			"BarnColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "Barn2",
+			"Value": "GoldBarn",
+			"When": 
+		{
+			"BarnColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "Barn3",
+			"Value": "LavenderBarn",
+			"When": 
+		{
+			"BarnColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//BigBarn Token Section
+		{
+			"Name": "BigBarn1",
+			"Value": "BlueBigBarn",
+			"When": 
+		{
+			"BigBarnColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "BigBarn2",
+			"Value": "GoldBigBarn",
+			"When": 
+		{
+			"BigBarnColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+		
+			"Name": "BigBarn3",
+			"Value": "LavenderBigBarn",
+			"When": 
+		{
+			"BigBarnColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//BigCoop Token Section
+		{
+			"Name": "BigCoop1",
+			"Value": "BlueBigCoop",
+			"When": 
+		{
+			"BigCoopColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "BigCoop2",
+			"Value": "GoldBigCoop",
+			"When": 
+		{
+			"BigCoopColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "BigCoop3",
+			"Value": "LavenderBigCoop",
+			"When": 
+		{
+			"BigCoopColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+/* will be added soon
+		//BigShed Token Section
+		{
+			"Name": "BigShed1",
+			"Value": "BlueBigShed",
+			"When": 
+		{
+			"BigShedColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "BigShed",
+			"Value": "GoldBigShed",
+			"When": 
+		{
+			"BigShedColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "BigShed3",
+			"Value": "LavenderBigShed",
+			"When": 
+		{
+			"BigShedColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+*/
+																	//Clock Token Section
+		{
+			"Name": "Clock1",
+			"Value": "BlueClock",
+			"When": 
+		{
+			"ClockColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "Clock",
+			"Value": "GoldClock",
+			"When": 
+		{
+			"ClockColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "Clock3",
+			"Value": "LavenderClock",
+			"When": 
+		{
+			"ClockColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//Coop Token Section
+		{
+			"Name": "coop1",
+			"Value": "Bluecoop",
+			"When": 
+		{
+			"CoopColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "coop2",
+			"Value": "Goldcoop",
+			"When": 
+		{
+			"CoopColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "coop3",
+			"Value": "Lavendercoop",
+			"When": 
+		{
+			"CoopColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//DeluxeBarn Token Section
+		{
+			"Name":" DeluxeBarnMask",
+			"value": "{{DeluxeBarnColor}}"
+															
+		},
+		{
+			"Name": "DeluxeBarn1",
+			"Value": "BlueDeluxeBarn",
+			"When": 
+		{
+			"DeluxeBarnColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "DeluxeBarn2",
+			"Value": "GoldDeluxeBarn",
+			"When": 
+		{
+			"DeluxeBarnColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "DeluxeBarn3",
+			"Value": "LavenderDeluxeBarn",
+			"When": 
+		{
+			"DeluxeBarnColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//DeluxeCoop Token Section
+		{
+			"Name": "DeluxeCoopMask",
+			"value": "{{DeluxeCoopColor}}"
+																														
+		},
+		{
+			"Name": "DeluxeCoop1",
+			"Value": "BlueDeluxeCoop",
+			"When": 
+		{
+			"DeluxeCoopColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "DeluxeCoop2",
+			"Value": "GoldDeluxeCoop",
+			"When": 
+		{
+			"DeluxeCoopColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "DeluxeCoop3",
+			"Value": "LavenderDeluxeCoop",
+			"When": 
+		{
+			"DeluxeCoopColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//GreenHouse Token Section
+		{
+			"Name": "GreenHousecolor1",
+			"Value": "GreenHouse1",
+			"When": 
+		{
+			"GreenHouse1": "True"
+		}
+		},
+		{
+			"Name": "GreenHousecolor2",
+			"Value": "GreenHouse2",
+			"When": 
+		{
+			"GreenHouse2": "True"
+		}
+		},
+																	//House Token Section
+		{
+			"Name": "HouseMask",
+			"value": "{{HouseColor}}"																				
+		},
+		{
+			"Name": "House1",
+			"Value": "BlueHouse",
+			"When": 
+		{
+			"HouseColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "House2",
+			"Value": "GoldHouse",
+			"When": 
+		{
+			"HouseColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "House3",
+			"Value": "LavenderHouse",
+			"When": 
+		{
+			"HouseColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+		{
+			"Name": "House4",
+			"Value": "BrownHouse",
+			"When": 
+		{
+			"HouseColor": "Brown"
+		}
+		},
+																	//JunimoHut Token Section
+		{
+			"Name": "JunimoHut1",
+			"Value": "BlueJunimoHut",
+			"When": 
+		{
+			"JunimoHutColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "JunimoHut2",
+			"Value": "GoldJunimoHut",
+			"When": 
+		{
+			"JunimoHutColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "JunimoHut3",
+			"Value": "LavenderJunimoHut",
+			"When": 
+		{
+			"JunimoHutColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//mill Token Section
+		{
+			"Name": "mill1",
+			"Value": "Bluemill",
+			"When": 
+		{
+			"millColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "mill2",
+			"Value": "Goldmill",
+			"When": 
+		{
+			"millColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "mill3",
+			"Value": "Lavendermill",
+			"When": 
+		{
+			"millColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//obelisk Token Section
+		{
+			"Name": "obelisk1",
+			"Value": "Desertobelisk1",
+			"When": 
+		{
+			"Desertobelisk": "True"
+		}
+		},
+		{
+			"Name": "obelisk2",
+			"Value": "Waterobelisk2",
+			"When": 
+		{
+			"Waterobelisk": "True"
+		}
+		},
+		{
+			"Name": "obelisk3",
+			"Value": "Waterobelisk3",
+			"When": 
+		{
+			"Waterobelisk": "True"
+		}
+		},
+																	//Shed Token Section
+		{
+			"Name": "Shed1",
+			"Value": "BlueShed",
+			"When": 
+		{
+			"ShedColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "Shed2",
+			"Value": "GoldShed",
+			"When": 
+		{
+			"ShedColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "Shed3",
+			"Value": "LavenderShed",
+			"When": 
+		{
+			"ShedColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//Silo Token Section
+		{
+			"Name": "Silo1",
+			"Value": "BlueSilo",
+			"When": 
+		{
+			"SiloColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "Silo2",
+			"Value": "GoldSilo",
+			"When": 
+		{
+			"SiloColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "Silo3",
+			"Value": "LavenderSilo",
+			"When": 
+		{
+			"SiloColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//SlimeHutch Token Section
+		{
+			"Name": "SlimeHutch1",
+			"Value": "BlueSlimeHutch",
+			"When": 
+		{
+			"SlimeHutchColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "SlimeHutch2",
+			"Value": "GoldSlimeHutch",
+			"When": 
+		{
+			"SlimeHutchColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "SlimeHutch3",
+			"Value": "LavenderSlimeHutch",
+			"When": 
+		{
+			"SlimeHutchColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//Stable Token Section
+		
+		{
+			"Name": "Stablemask",
+			"value": "{{StableColor}}"																				
+		},															
+		{
+			"Name": "Stable1",
+			"Value": "BlueStable",
+			"When": 
+		{
+			"StableColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "Stable2",
+			"Value": "GoldStable",
+			"When": 
+		{
+			"StableColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "Stable3",
+			"Value": "LavenderStable",
+			"When": 
+		{
+			"StableColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		},
+																	//Well Token Section
+		{
+			"Name": "Well1",
+			"Value": "BlueWell",
+			"When": 
+		{
+			"WellColor": "Blue",
+			"ColorAll": "Blue"
+		}
+		},
+		{
+			"Name": "Well2",
+			"Value": "GoldWell",
+			"When": 
+		{
+			"WellColor": "Gold",
+			"ColorAll": "Gold"
+		}
+		},
+		{
+			"Name": "Well3",
+			"Value": "LavenderWell",
+			"When": 
+		{
+			"WellColor": "Lavender",
+			"ColorAll": "Lavender"
+		}
+		}
+	],
+
+//Part 2 Configuration XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+	"ConfigSchema": 
+	{
+
+/*
+
+																	A Config Token Example : ;) 
+
+		"<ConfigTokenName>": 
+	{
+		"AllowValues": "<Off, config option names,config option names>", note : add a default allowed value so your change wont occur if the default value is selected unless you want your change in part 3 to be active by default otherwise i put Off.
+		"Default": "<the config option you want by default>"
+	},
+
+*/
+
+																	//All config
+
+		"Mod": 
+	{
+		"AllowValues": "Off,On",
+		"Default": "Off"
+	},
+
+		"ColorAll": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//Barn Config
+		"BarnColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//BigBarn Config
+		"BigBarnColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//BigCoop Config
+		"BigCoopColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+/* will be added soon
+																	//BigShed Config
+		"BigShedColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+*/
+																	//Clock Config
+		"ClockColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//Coop Config
+		"CoopColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//DeluxeBarn Config
+		"DeluxeBarnColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//DeluxeCoop Config
+		"DeluxeCoopColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//House config
+		"HouseColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold, Brown",
+		"Default": "Off"
+	},
+																	//JunimoHut config
+		"JunimoHutColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//Mill config
+		"MillColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//Shed config
+		"ShedColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//Silo config
+		"SiloColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//SlimeHutch config
+		"SlimeHutchColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//Stable config
+		"StableColor": 
+	{	
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//Well config
+		"WellColor": 
+	{
+		"AllowValues": "Off, Blue, Lavender, Gold",
+		"Default": "Off"
+	},
+																	//GreenHouse config
+		"Greenhouse1": 
+	{
+		"AllowValues": "True, false",
+		"AllowMultiple": "false",
+		"Default": "false"
+	},
+		"Greenhouse2": 
+	{
+		"AllowValues": "True, false",
+		"AllowMultiple": "false",
+		"Default": "false"
+	},
+																	//Obelisk config
+		"DesertObelisk": 
+	{
+		"AllowValues": "True, false",
+		"AllowMultiple": "false",
+		"Default": "false"
+	},
+		"EarthObelisk": 
+	{
+		"AllowValues": "True, false",
+		"AllowMultiple": "false",
+		"Default": "false"
+	},
+		"WaterObelisk": 
+	{
+		"AllowValues": "True, false",
+		"AllowMultiple": "false",
+		"Default": "false"
+	}
+	},
+//Part 3 Changes XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	
+	"Changes": 
+	[
+/*
+
+																	A Change Example : ;*
+
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/<vanilla building name in content unpacked folder>.png",
+		"FromFile": "<location of your file you want to add>/{{<ConfigtokenName>}}.png",
+		"When": 
+	{
+		"<ConfigtokenName> |contains=<Default or other config option names i put Off>": "false",                               Note : this line makes the change Not occur if the config token has a configoption active.
+	}
+	},
+
+
+																	A mask example
+	{
+
+	}
+
+
+*/
+																	//Barn Changes
+
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/barn",
+		"FromFile": "assets/barn/{{BarnColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"BarnColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/barn",
+		"FromFile": "assets/barn/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//BigBarn Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Big Barn",
+		"FromFile": "assets/bigbarn/{{BigBarnColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"BigBarnColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Big Barn",
+		"FromFile": "assets/bigbarn/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//BigCoop Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Big Coop",
+		"FromFile": "assets/bigcoop/{{BigCoopColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"BigCoopColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Big Coop",
+		"FromFile": "assets/bigcoop/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+/* will be added soon
+	//BigShed Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Big Shed_PaintMask",
+		"FromFile": "assets/bigshed/{{BigShedColor}}mask.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"BigShedColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Big Shed_PaintMask",
+		"FromFile": "assets/bigshed/{{ColorAll}}mask.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"ColorAll |contains=Off": "false"
+	}
+	},  
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Big Shed",
+		"FromFile": "assets/bigshed/{{BigShedColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"BigShedColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Big Shed",
+		"FromFile": "assets/bigshed/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+*/
+																	//Clock Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Gold Clock",
+		"FromFile": "assets/clock/{{ClockColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"ClockColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Gold Clock",
+		"FromFile": "assets/clock/{{ColorAll}}.png",
+		"When":
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//Coop Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/coop",
+		"FromFile": "assets/coop/{{CoopColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"CoopColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/coop",
+		"FromFile": "assets/coop/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//DeluxeBarn Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Barn_PaintMask",
+		"FromFile": "assets/deluxebarn/mask.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"DeluxeBarnColor |contains=Off": "false",
+		"DeluxeBarnColor |contains=Blue, Lavender, Gold": "true"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Barn_PaintMask",
+		"FromFile": "assets/deluxebarn/mask.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"ColorAll |contains=Off": "false",
+		"ColorAll |contains=Blue, Lavender, Gold": "true"
+	}
+	},  
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Barn",
+		"FromFile": "assets/deluxebarn/{{DeluxeBarnColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"DeluxeBarnColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Barn",
+		"FromFile": "assets/deluxebarn/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//DeluxeCoop Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Coop_PaintMask",
+		"FromFile": "assets/deluxecoop/mask.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"DeluxeCoopColor |contains=Off": "false",
+		"DeluxeCoopColor |contains=Blue, Lavender, Gold": "true"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Coop_PaintMask",
+		"FromFile": "assets/deluxecoop/mask.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"ColorAll |contains=Off": "false",
+		"ColorAll |contains=Blue, Lavender, Gold": "true"
+	}
+	},    
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Coop",
+		"FromFile": "assets/deluxecoop/{{DeluxeCoopColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"DeluxeCoopColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Coop",
+		"FromFile": "assets/deluxecoop/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//GreenHouse changes	   
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Greenhouse",
+		"FromFile": "assets/greenhouse/1.png",
+		"FromArea": 
+	{ 	"X":0, "Y":0, "Width":112, "Height":320 
+	},
+		"ToArea": 
+	{ 	"X":0, "Y":0, "Width":112, "Height":320 
+	},
+		"When": 
+	{
+		"Greenhouse1 |contains=false": "false",
+		"Mod |contains=Off": "false"
+  	}
+	},
+  	{
+		"Action": "EditImage",
+		"Target": "Buildings/Greenhouse",
+		"FromFile": "assets/greenhouse/2.png",
+		"FromArea": 
+	{	
+		"X":0, "Y":0, "Width":112, "Height":320 
+	},
+		"ToArea": 
+	{ 	
+		"X":0, "Y":0, "Width":112, "Height":320 
+	},
+		"When": 
+	{
+		"Greenhouse2 |contains=false": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//HOUSE CHANGES
+	{
+ 		"Action": "EditImage",
+  		"Target": "Buildings/houses_PaintMask",
+  		"FromFile": "assets/house/{{HouseColor}}mask.png",
+  		"ToArea": 
+	{ 
+		"X":0, "Y":0, "Width":160, "Height":432 
+	},
+	   	"FromArea": 
+	{ 
+		"X":0, "Y":0, "Width":160, "Height":432 
+	},
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"HouseColor |contains=Off": "false",
+		"HouseColor |contains=Blue, Lavender, Gold": "true",
+		"HasFile:assets/house/{{HouseColor}}mask.png": "true"
+	}
+	},
+	{
+		"Action": "EditImage",
+		 "Target": "Buildings/houses_PaintMask",
+		 "FromFile": "assets/house/{{ColorAll}}mask.png",
+		 "ToArea": 
+   { 
+	   "X":0, "Y":0, "Width":160, "Height":432 
+   },
+		  "FromArea": 
+   { 
+	   "X":0, "Y":0, "Width":160, "Height":432 
+   },
+	   "When": 
+   {
+	   "Mod |contains=Off": "false",
+	   "ColorAll |contains=Off": "false",
+	   "ColorAll |contains=Blue, Lavender, Gold": "true",
+	   "HasFile:assets/house/{{ColorAll}}mask.png": "true"
+   }
+   },
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/houses",
+		"FromFile": "assets/house/{{HouseColor}}.png",
+		"ToArea": 
+	{ 
+		"X":0, "Y":0, "Width":160, "Height":432 
+	},
+		"FromArea": 
+	{ 
+		"X":0, "Y":0, "Width":160, "Height":432 
+	},
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"HouseColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/houses",
+		"FromFile": "assets/house/{{ColorAll}}.png",
+		"ToArea": 
+	{
+		"X":0, "Y":0, "Width":160, "Height":432 
+	},
+		"FromArea": 
+	{ 
+		"X":0, "Y":0, "Width":160, "Height":432 
+	},
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//JunimoHut CHANGES
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Junimo Hut",
+		"FromFile": "assets/junimohut/{{JunimoHutColor}}.png",
+		"When":
+	{
+		"Mod |contains=Off": "false",
+		"HouseColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Junimo Hut",
+		"FromFile": "assets/junimohut/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//Mill CHANGES
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/mill",
+		"FromFile": "assets/mill/{{millColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"millColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/mill",
+		"FromFile": "assets/mill/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//Obelisk CHANGES
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Desert Obelisk",
+		"FromFile": "assets/obelisk/DesertObelisk.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"DesertObelisk |contains=false": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Earth Obelisk",
+		"FromFile": "assets/obelisk/EarthObelisk.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"EarthObelisk |contains=false": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/WaterObelisk",
+		"FromFile": "assets/obelisk/WaterObelisk.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"WaterObelisk |contains=false": "false"
+	}
+	},
+																	//Shed CHANGES
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/shed",
+		"FromFile": "assets/shed/{{ShedColor}}.png",
+		"When": 	
+	{
+		"Mod |contains=Off": "false",
+		"ShedColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/shed",
+		"FromFile": "assets/shed/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//Silo Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Silo",
+		"FromFile": "assets/silo/{{SiloColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"SiloColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Silo",
+		"FromFile": "assets/silo/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//SlimeHutch Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Slime Hutch",
+		"FromFile": "assets/slimeHutch/{{SlimeHutchColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"SlimeHutchColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Slime Hutch",
+		"FromFile": "assets/SlimeHutch/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//Stable Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Stable_PaintMask",
+		"FromFile": "assets/stable/mask.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"StableColor |contains=Off": "false",
+		"StableColor |contains=Blue, Lavender, Gold": "true"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Stable_PaintMask",
+		"FromFile": "assets/stable/mask.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"ColorAll |contains=Off": "false",
+		"ColorAll |contains=Blue, Lavender, Gold": "true"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Stable",
+		"FromFile": "assets/stable/{{StableColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"StableColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Stable",
+		"FromFile": "assets/Stable/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	},
+																	//Well Changes
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Well",
+		"FromFile": "assets/Well/{{WellColor}}.png",
+		"When": 
+	{
+		"Mod |contains=Off": "false",
+		"WellColor |contains=Off": "false"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Buildings/Well",
+		"FromFile": "assets/Well/{{ColorAll}}.png",
+		"When": 
+	{
+		"ColorAll |contains=Off": "false",
+		"Mod |contains=Off": "false"
+	}
+	}
+	]
+}
+
+//Code Written By: KithMyAth
+//All Artwork By: Asunai
